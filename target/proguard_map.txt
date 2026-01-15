@@ -1,0 +1,52 @@
+com.example.demo.JavaFxProjectApplication -> com.example.demo.JavaFxProjectApplication:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+com.example.demo.controller.ProductController -> com.example.demo.a.a:
+    com.example.demo.repository.ProductGroupRepository groupRepository -> a
+    com.example.demo.service.ProductService service -> b
+    void <init>() -> <init>
+    java.util.List getAllProduct() -> a
+    com.example.demo.entity.Product addProduct(com.example.demo.entity.Product) -> a
+    com.example.demo.entity.Product updateProduct(java.lang.Long,com.example.demo.entity.Product) -> a
+    void deleteProduct(java.lang.Long) -> a
+com.example.demo.entity.Product -> com.example.demo.b.a:
+    java.lang.Long id -> a
+    java.lang.String productName -> b
+    java.lang.Boolean isAvailable -> c
+    com.example.demo.entity.ProductGroup productGroup -> d
+    void <init>() -> <init>
+    java.lang.Long getId() -> a
+    java.lang.String getProductName() -> b
+    java.lang.Boolean getIsAvailable() -> c
+    com.example.demo.entity.ProductGroup getProductGroup() -> d
+    void setId(java.lang.Long) -> a
+    void setProductName(java.lang.String) -> a
+    void setIsAvailable(java.lang.Boolean) -> a
+    void setProductGroup(com.example.demo.entity.ProductGroup) -> a
+    boolean equals(java.lang.Object) -> equals
+    boolean canEqual(java.lang.Object) -> a
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.example.demo.entity.ProductGroup -> com.example.demo.b.b:
+    java.lang.Long id -> a
+    java.lang.String groupName -> b
+    void <init>() -> <init>
+    java.lang.Long getId() -> a
+    java.lang.String getGroupName() -> b
+    void setId(java.lang.Long) -> a
+    void setGroupName(java.lang.String) -> a
+    boolean equals(java.lang.Object) -> equals
+    boolean canEqual(java.lang.Object) -> a
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.example.demo.repository.ProductGroupRepository -> com.example.demo.c.a:
+    java.util.Optional findByGroupNameIgnoreCase(java.lang.String) -> a
+com.example.demo.repository.ProductRepository -> com.example.demo.c.b:
+com.example.demo.service.ProductService -> com.example.demo.d.a:
+    com.example.demo.repository.ProductRepository repository -> a
+    com.example.demo.repository.ProductGroupRepository groupRepository -> b
+    void <init>() -> <init>
+    java.util.List getAll() -> a
+    com.example.demo.entity.Product save(com.example.demo.entity.Product) -> a
+    com.example.demo.entity.Product update(java.lang.Long,com.example.demo.entity.Product) -> a
+    void delete(java.lang.Long) -> a
